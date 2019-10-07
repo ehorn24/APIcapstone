@@ -1,0 +1,701 @@
+/* GENERAL */
+
+html {
+  background-image: url("https://i.imgur.com/GxUfOXm.png");
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.logo {
+  position: fixed;
+  font-family: "Yellowtail", cursive;
+  color: #17252a;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+.restart {
+  font-family: "Open Sans", serif;
+  text-transform: uppercase;
+  color: none;
+  position: fixed;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #2b7a78;
+  font-weight: 700;
+}
+
+.restart:hover,
+.back:hover {
+  color: #feffff;
+}
+
+.back {
+  font-family: "Open Sans", serif;
+  text-transform: uppercase;
+  color: none;
+  position: fixed;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  color: #2b7a78;
+  font-weight: 700;
+}
+
+.appTitle {
+  font-family: "Yellowtail", cursive;
+  color: #17252a;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.intro {
+  font-family: "Open Sans", serif;
+  font-weight: 800;
+  text-align: center;
+  color: white;
+}
+
+.letsStart {
+  font-family: "open sans", serf;
+  text-align: center;
+  color: #17252a;
+  font-weight: 700;
+}
+
+form {
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.drinkKnown,
+.ingredientKnown,
+.drinkHelp {
+  border: 5px solid #2b7a78;
+  font-family: "open sans", serif;
+  color: #17252a;
+  background-color: #feffff;
+}
+
+.drinkKnown:hover,
+.ingredientKnown:hover,
+.drinkHelp:hover {
+  background-color: #def2f1;
+}
+
+.searchHeader {
+  text-align: center;
+  font-family: "open sans", serif;
+  color: #17252a;
+}
+
+.searchBox {
+  font-family: "Open sans", serif;
+  border: 2px solid #17252a;
+  background-color: #feffff;
+}
+
+.drinkButton,
+.ingredientButton {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "open sans", serif;
+  text-transform: uppercase;
+  color: #17252a;
+  font-weight: 700;
+}
+
+.drinkButton:hover,
+.ingredientButton:hover {
+  color: #feffff;
+}
+
+.resultsHeader {
+  font-family: "open sans", serif;
+  color: #17252a;
+  text-align: center;
+}
+
+.resultsContainer {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.drinkResult {
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+}
+
+.thumbnail {
+  border: 5px solid #2b7a78;
+}
+
+.thumbnail:hover {
+  border: 5px solid #feffff;
+}
+
+.recipeName {
+  font-family: "open sans", serif;
+  color: #feffff;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.recipePage {
+  padding: 0;
+}
+
+.title {
+  font-family: "yellowtail", cursive;
+  color: #17252a;
+  text-align: center;
+}
+
+.title:after {
+  content: ".";
+}
+
+.drinkImg {
+  border: 8px solid #def2f1;
+}
+
+.ingredientContainer h5 {
+  font-family: "Open Sans", serif;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #feffff;
+}
+
+.ingredientList {
+  font-family: "Open Sans", serif;
+  color: #feffff;
+  list-style: circle;
+  padding: 0;
+}
+
+.instructionsContainer h5 {
+  font-family: "Open Sans", serif;
+  font-size: 25px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #feffff;
+  letter-spacing: 1.5px;
+  margin: 15px 0 10px 0;
+}
+
+.instructionsContainer p {
+  font-family: "Open Sans", serif;
+  color: #feffff;
+}
+
+.similarDrinks {
+  margin: 0px 30px;
+  text-align: center;
+}
+
+.similarHeader {
+  font-family: "Open sans", serif;
+  color: #feffff;
+  text-align: center;
+}
+
+.pickerList li {
+  font-family: "Open sans", serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  border: 5px solid #2b7a78;
+  background-color: #feffff;
+  color: #17252a;
+}
+
+.drinkPickerButton {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-family: "open sans", serif;
+  text-transform: uppercase;
+  color: #17252a;
+  font-weight: 700;
+}
+
+.drinkPickerButton:hover {
+  color: #feffff;
+}
+
+.retrySearch {
+  font-family: "Open Sans", serif;
+  color: #feffff;
+}
+
+nav {
+  height: 130px;
+}
+
+.logo {
+  top: 15px;
+  left: 25px;
+  font-size: 60px;
+  letter-spacing: 3.5px;
+}
+
+.restart {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  top: 90px;
+  left: 35px;
+}
+
+.back {
+  font-size: 16px;
+  letter-spacing: 1.5px;
+  top: 90px;
+  left: 220px;
+}
+
+.appTitle {
+  font-size: 99px;
+  letter-spacing: 6px;
+  width: 570px;
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+
+.main {
+  margin-top: 40px;
+  margin-bottom: 80px;
+}
+
+.intro {
+  font-size: 42px;
+  width: 75%;
+  line-height: 48px;
+  letter-spacing: 4px;
+  margin: 0 auto;
+}
+
+.letsStart {
+  margin-top: 25px;
+  font-size: 22px;
+  letter-spacing: 3px;
+}
+
+form {
+  margin-top: 40px;
+}
+
+li {
+  margin: 20px 0;
+  padding: 0;
+}
+
+.drinkKnown,
+.ingredientKnown,
+.drinkHelp {
+  text-align: center;
+  padding: 30px;
+  width: 380px;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+#searchDrink,
+#searchIngredient,
+#drinkPickerForm {
+  margin-top: 220px;
+  margin-bottom: 80px;
+}
+
+.searchHeader {
+  letter-spacing: 1px;
+  font-size: 28px;
+}
+
+.searchBox {
+  font-size: 18px;
+  letter-spacing: 1px;
+  margin-top: 30px;
+  height: 50px;
+  width: 620px;
+  padding-left: 15px;
+}
+
+.drinkButton,
+.ingredientButton {
+  font-size: 18px;
+  letter-spacing: 1px;
+}
+
+.resultsHeader {
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.resultsContainer {
+  width: 80%;
+}
+
+.drinkResult {
+  margin: 30px;
+}
+
+.thumbnail {
+  width: 210px;
+  height: 210px;
+}
+
+.recipeName {
+  letter-spacing: 1.5px;
+  font-size: 18px;
+}
+
+.resultsPage {
+  margin-top: 150px;
+}
+
+.recipePage {
+  margin: 80px 100px 100px 100px;
+}
+
+.title {
+  font-size: 90px;
+  letter-spacing: 3px;
+  margin-top: 120px;
+  margin-bottom: 35px;
+}
+
+.imgContainer {
+  width: 350px;
+  height: 350px;
+}
+
+.drinkImg {
+  height: 350px;
+  width: 350px;
+}
+
+.ingredientContainer {
+  width: 400px;
+  margin-left: 430px;
+  margin-bottom: 30px;
+}
+
+.ingredientContainer h5 {
+  font-size: 25px;
+  letter-spacing: 1.5px;
+  margin: 15px 0 10px 0;
+}
+
+.ingredientList {
+  font-size: 18px;
+}
+
+.ingredientItem {
+  margin-left: 30px;
+  letter-spacing: 1px;
+}
+
+.instructionsContainer {
+  width: 400px;
+  margin-left: 430px;
+}
+
+.instructionsContainer p {
+  font-size: 18px;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.similarHeader {
+  font-size: 23px;
+  letter-spacing: 2px;
+}
+
+.pickerList li {
+  width: 650px;
+  padding: 20px;
+  margin: 40px auto;
+  font-size: 16px;
+  letter-spacing: 1.5px;
+}
+
+.drinkPickerButton {
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.retrySearch {
+  margin: 45px auto;
+  font-size: 18px;
+  width: 350px;
+}
+
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) {
+  .appTitle {
+    width: 350px;
+    font-size: 50px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .intro {
+    margin-top: 20px;
+    width: 310px;
+    font-size: 20px;
+    line-height: 29px;
+  }
+
+  .drinkKnown,
+  .ingredientKnown,
+  .drinkHelp {
+    width: 335px;
+  }
+
+  .logo {
+    font-size: 40px;
+  }
+
+  .restart {
+    top: 70px;
+  }
+
+  .back {
+    top: 70px;
+    left: 160px;
+  }
+
+  #searchDrink,
+  #searchIngredient,
+  #drinkPickerForm {
+    margin-top: 160px;
+  }
+
+  .searchHeader {
+    font-size: 22px;
+  }
+
+  .searchBox {
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    height: 40px;
+    width: 330px;
+    padding-left: 15px;
+  }
+
+  .pickerList li {
+    width: 300px;
+    padding: 20px;
+    margin: 40px auto;
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+
+  .resultsHeader {
+    font-size: 25px;
+  }
+
+  .drinkResult {
+    margin: 15px;
+  }
+  .thumbnail {
+    width: 160px;
+    height: 160px;
+  }
+
+  .recipePage {
+    margin: 80px 20px 0px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .imgContainer {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .drinkImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ingredientContainer {
+    margin: 50px auto;
+    width: 330px;
+  }
+
+  .ingredientContainer h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ingredientList {
+    font-size: 16px;
+  }
+
+  .ingredientItem {
+    margin: 10px 0px 10px 30px;
+  }
+
+  .instructionsContainer {
+    width: 330px;
+    margin: 50px auto;
+  }
+
+  .instructionsContainer h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .instructionsContainer p {
+    font-size: 16px;
+  }
+
+  .similarHeader {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 667px) and (max-width: 820px) {
+  .intro {
+    font-size: 32px;
+    letter-spacing: 2.5px;
+  }
+
+  .pickerlist li {
+    width: 490px;
+  }
+
+  .recipePage {
+    margin: 80px 20px 0px;
+  }
+
+  .title {
+    font-size: 45px;
+  }
+
+  .imgContainer {
+    width: 200px;
+    height: 200px;
+    margin: 20px auto;
+  }
+
+  .drinkImg {
+    width: 200px;
+    height: 200px;
+  }
+
+  .ingredientContainer {
+    margin: 50px auto;
+    width: 330px;
+  }
+
+  .ingredientContainer h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .ingredientList {
+    font-size: 16px;
+  }
+
+  .ingredientItem {
+    margin: 10px 0px 10px 30px;
+  }
+
+  .instructionsContainer {
+    width: 330px;
+    margin: 50px auto;
+  }
+
+  .instructionsContainer h5 {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .instructionsContainer p {
+    font-size: 16px;
+  }
+
+  .similarHeader {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 820px) and (max-width: 980px) {
+  .recipePage {
+    margin: 80px 40px 70px;
+  }
+
+  .imgContainer {
+    margin-left: 0;
+    float: left;
+  }
+
+  .ingredientContainer {
+    margin-left: 400px;
+  }
+
+  .ingredientContainer h5 {
+    font-size: 22px;
+  }
+
+  .ingredientItem {
+    font-size: 16px;
+  }
+
+  .instructionsContainer {
+    margin-left: 400px;
+  }
+
+  .instructionsContainer h5 {
+    font-size: 22px;
+  }
+
+  .instructionsContainer p {
+    font-size: 16px;
+    width: 350px;
+  }
+}
+
+@media only screen and (min-width: 980px) {
+  .imgContainer {
+    float: left;
+    margin: 20px auto;
+  }
+
+  .instructionsContainer {
+    width: 400px;
+    margin-left: 430px;
+  }
+
+  .ingredientContainer {
+    width: 400px;
+    margin-left: 430px;
+    margin-bottom: 30px;
+  }
+}

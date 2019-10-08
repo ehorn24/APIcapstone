@@ -10,5 +10,14 @@ Technology used: HTML, CSS, JavaScript, jQuery
 
 Screenshots:
 
+![Starting screen](https://i.imgur.com/5IDxgVg.png)
+
+![Search options](https://i.imgur.com/vwiGycO.png)
+
+![Search Bar](https://i.imgur.com/Ffs9xBk.png)
+
+![Drink Suggestion Form](https://i.imgur.com/deGQuiS.png)
+
+![Recipe page](https://i.imgur.com/tQHeVDx.png)
 
 
